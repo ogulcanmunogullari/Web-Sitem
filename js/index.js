@@ -13,8 +13,4 @@ ROTATE_MENU.addEventListener("click", () => {
     setTimeout(() => {
         SLIDE_HEADER.classList.toggle("margin")
     }, 450)
-    
-
-
-
 })

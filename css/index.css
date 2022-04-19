@@ -1,19 +1,11 @@
 /* İstenmeyenler */
-a{
+*{
     text-decoration: none;
-    
-}
-li{
     list-style: none;
-}
-ul{
     margin: 0;
     padding: 0;
-}
-body a{
     color: black;
 }
-
 /* Renkler */
 .bg-scss{
      background-color: rgb(202, 102, 154);
@@ -43,7 +35,6 @@ body a{
     background-color: black;
     padding: 5px;
 }
-
 
 body{
     position: relative;
@@ -182,14 +173,48 @@ footer{
     padding: 10px;
 
 }
+@media only screen and (max-width: 1023px) {
 
+    .slideContainer{
+        position: absolute;
+        left: -75px;
+        top: 100px;
+    }
+    .slide{
+        top: 700px;
+    }
+    footer{
+        position: absolute;
+    }
+    h1,h2{
+        font-size: 3rem;
+    }
+    a{
+        font-size: 1.5rem;
+    }
+    li{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+}
 @media only screen and (max-width: 767px) {
     h1,h2{
         font-size: 1.5rem;
     }
     .slideContainer{
         position: absolute;
-        left: -60px;
-        top: -10px;
+        left: -100px;
+        top: 50px;
+    }
+    .slide{
+        top: 450px;
+    }
+    footer{
+        position: absolute;
+    }
+    h3{
+        font-size: 1rem;
     }
 }
