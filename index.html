@@ -4,24 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oğulcan's Space</title>
-    <link rel="stylesheet" href="/CSS's/reset.css">
-    <link rel="stylesheet" href="/CSS's/index.css">
+    <title>Dönen Menü</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <div>
-        <h1>I'm still working on :D</h1>
+    <div class="menuCircle bg-scss ">
+        <img class="closedMenu" src="/icons/closed-menu.svg" alt="" >
+        <img class="normalMenu" src="/icons/menu.svg" alt="" >
     </div>
-    <div>
-        <h2>There are some projects created myself</h2>
-    </div>
-    <div>
-        <a href="/HTML's/to-do.html" target="_blank">To Do List</a>
-        <a href="/HTML's/menu.html" target="_blank">Dinamik Menu</a>
-        <a href="/50 Proje/Kartlar/kartlar.html" target="_blank">Açılan Kartlar</a>
-        <a href="/50 Proje/İlerleme Adımları/ilerleme.html" target="_blank">İlerleme Adımları</a>
+    <main class="container flex justify-center">
+        <div class="slider flex justify-center">
+            <header class="flex justify-center">
+                <h1>Oğulcan Munoğulları</h1>
+                <h2>Junior <span class="sekil">Front-End Developer</span></h2>
+            </header>
+            
+            <div class="flex justify-center max-width">
+                <article class="flex justify-center">
+                    <ul>
+                        <li><a href="">Menu</a></li>
+                    </ul>
+                </article>
+                <article class="flex justify-center">
+                    <ul>
+                        <li><a href="">Progress</a></li>
+                    </ul>
+                </article>
+                <article class="flex justify-center">
+                    <ul>
+                        <li><a href="">Cards</a></li>
+                    </ul>
+                </article>
+                <article class="flex justify-center">     
+                    <ul>
+                        <li><a href="">To-Do</a></li>
+                    </ul>
+                </article>
+                
+            </div>
 
+        </div>
+        
+            
+        </main>
+        <footer>
+            <h3>Kullanılan renkler, React <span class="react">Mavisi</span>, JS <span class="js">Sarısı</span>, HTML <span class="html">Turuncusu</span>, CSS <span class="css">Mavisi</span>, SCSS <span class="scss">Pembesi</span></h3>
+        </footer>
 
-    </div>
+    </main>
+    <aside>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/index2.html">Tüm Projeler</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/ogulcanmunogullari/" target="_blank">Linkedin</a>
+                </li>
+                <li>
+                    <a href="https://github.com/ogulcanmunogullari" target="_blank">Github</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <script src="/js/index.js"></script>
 </body>
 </html>

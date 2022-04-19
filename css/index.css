@@ -1,0 +1,195 @@
+/* İstenmeyenler */
+a{
+    text-decoration: none;
+    
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+body a{
+    color: black;
+}
+
+/* Renkler */
+.bg-scss{
+     background-color: rgb(202, 102, 154);
+}
+.react{
+    background-color: black;
+    padding: 5px;
+    color: rgb(115, 216, 251);
+}
+.scss{
+    background-color: black;
+    padding: 5px;
+    color: rgb(202, 102, 154);;
+}
+.css{
+    color: rgb(64, 69, 227);
+    background-color: black;
+    padding: 5px;
+}
+.html{
+    color: rgb(223, 80, 47);
+    background-color: black;
+    padding: 5px;
+}
+.js{
+    color: rgb(236, 221, 83);
+    background-color: black;
+    padding: 5px;
+}
+
+
+body{
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(223, 80, 47)
+}
+
+
+
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.margin{
+    margin-top: 200px;
+}
+h1, h2{
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+}
+
+
+
+/* Menü */
+
+.menuCircle{
+    z-index: 999;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    top: -100px;
+    left: -100px;
+    transform: rotate(45deg);
+    transition: ease-in-out 2000ms all;
+    position: fixed;
+    cursor: pointer;
+}
+.menuCircleRotate{
+    transform: rotate(-45deg);
+}
+.closedMenu, .normalMenu{
+    position: absolute;
+    width: 40px;
+}
+.closedMenu{
+    bottom: 20px;
+    right: 40%;
+    transform: translateX(50%);
+    transform: rotate(-45deg)
+}
+.normalMenu{
+    right: 20px;
+    bottom: 40%;
+    transform: translateY(50%);
+    transform: rotate(-45deg)
+}
+
+/* Container */
+.container{
+    height: 100vh;
+    width: 100vw;
+    transition: ease-in-out 1500ms all;
+    background-image: url(https://media.architecturaldigest.com/photos/615dd79a1a04f44746650292/16:9/w_2560%2Cc_limit/GettyImages-1144462787.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat, repeat;  
+    transform-origin: top left;
+    align-items: center;
+}
+.slider{
+    transition: ease-in-out 750ms all;
+    flex-direction: column;
+
+}
+.slideContainer{
+    transform: rotate(20deg)
+}
+.containerRotate{
+    transform: rotate(-20deg);
+    z-index: -1;
+}
+header{
+    
+    flex-direction: column;
+    align-items: center;
+}
+.sekil{
+    background-color: rgb(236, 221, 83);
+    color: rgb(64, 69, 227);
+    margin-right: -5px;
+    padding: 10px;
+}
+.slider div{
+    gap: 20px;
+    align-items: center;
+}
+.max-width{
+    max-width: 90vw;
+}
+div article{
+    margin-top: 50px;
+    background-color: aliceblue;
+    width: 200px;
+    height: 100px;
+    box-shadow: 0 0 20px 0 rgb(107, 107, 107);
+}
+
+
+/* Menü */
+aside{
+    position: fixed;
+    bottom: 0;
+    left: -200px;
+    width: 200px;
+    height: 250px;
+    transition: ease-in-out 2000ms all;
+}
+.slide{
+    left: 20px;
+}
+aside nav li{
+    margin: 10px 0;
+}
+nav li a{
+    color: rgb(115, 216, 251);
+    font-size: 1.5em;
+}
+/* Footer */
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    padding: 10px;
+
+}
+
+@media only screen and (max-width: 767px) {
+    h1,h2{
+        font-size: 1.5rem;
+    }
+    .slideContainer{
+        position: absolute;
+        left: -60px;
+        top: -10px;
+    }
+}
