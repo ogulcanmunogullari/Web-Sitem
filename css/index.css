@@ -73,6 +73,7 @@ h1, h2{
     transition: ease-in-out 2000ms all;
     position: fixed;
     cursor: pointer;
+    will-change: auto;
 }
 .menuCircleRotate{
     transform: rotate(-45deg);
@@ -142,6 +143,7 @@ div article{
     width: 200px;
     height: 100px;
     box-shadow: 0 0 20px 0 rgb(107, 107, 107);
+    will-change: auto;
 }
 
 
@@ -154,6 +156,7 @@ aside{
     width: 200px;
     height: 250px;
     transition: ease-in-out 2000ms all;
+    will-change: auto;
 }
 
 .slide{
@@ -174,6 +177,7 @@ footer{
     z-index: -1;
     padding: 10px;
     transition: ease-in-out 2000ms all;
+    will-change: auto;
 
 }
 @media only screen and (max-width: 1023px) {
@@ -182,10 +186,12 @@ footer{
         position: absolute;
         left: -75px;
         top: 100px;
+        will-change:auto;
     }
     .footerMove{
         z-index: 999;
         background-color: aliceblue;
+        will-change: auto;
     }
     h1,h2{
         font-size: 3rem;
