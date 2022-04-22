@@ -147,13 +147,15 @@ div article{
 
 /* Menü */
 aside{
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    overflow: auto;
+    top: 65vh;
     left: -200px;
     width: 200px;
     height: 250px;
     transition: ease-in-out 2000ms all;
 }
+
 .slide{
     left: 20px;
 }
@@ -166,11 +168,12 @@ nav li a{
 }
 /* Footer */
 footer{
-    position: fixed;
+    position: absolute;
     bottom: 0;
     right: 0;
     z-index: -1;
     padding: 10px;
+    transition: ease-in-out 2000ms all;
 
 }
 @media only screen and (max-width: 1023px) {
@@ -180,11 +183,9 @@ footer{
         left: -75px;
         top: 100px;
     }
-    .slide{
-        top: 700px;
-    }
-    footer{
-        position: absolute;
+    .footerMove{
+        z-index: 999;
+        background-color: aliceblue;
     }
     h1,h2{
         font-size: 3rem;
@@ -208,11 +209,9 @@ footer{
         left: -100px;
         top: 50px;
     }
-    .slide{
-        top: 450px;
-    }
-    footer{
-        position: absolute;
+    .footerMove{
+        z-index: 999;
+        background-color: aliceblue;
     }
     h3{
         font-size: 1rem;
