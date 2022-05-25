@@ -144,6 +144,10 @@ div article{
     height: 100px;
     box-shadow: 0 0 20px 0 rgb(107, 107, 107);
     will-change: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
 }
 
 
